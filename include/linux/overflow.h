@@ -202,6 +202,7 @@
 
 #endif /* COMPILER_HAS_GENERIC_BUILTIN_OVERFLOW */
 
+
 /**
  * array_size() - Calculate size of 2-dimensional array.
  *
@@ -274,5 +275,6 @@ static inline __must_check size_t __ab_c_size(size_t n, size_t size, size_t c)
 	__ab_c_size(n,							\
 		    sizeof(*(p)->member) + __must_be_array((p)->member),\
 		    sizeof(*(p)))
+
 
 #endif /* __LINUX_OVERFLOW_H */
